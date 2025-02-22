@@ -13,6 +13,7 @@ int main() {
 				k=false;
 				break;
 			}
+			i++;
 		}
 		if(k==true) cout<<"YES";
 		else cout<<"NO";
