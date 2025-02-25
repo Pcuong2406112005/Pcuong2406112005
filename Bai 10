@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int souoccuaNchiahetcho2(int N) {
+    int count = 0;
+    for (int i = 1; i * i <= N; i++) {
+        if (N % i == 0) {
+            if (i % 2 == 0) count++; 
+            if (i != N / i && (N / i) % 2 == 0) count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    int N;
+    cin >> N;
+    cout << souoccuaNchiahetcho2(N);
+}
